@@ -25,7 +25,7 @@ namespace LAB2.Google_Drive_Services
                 Directory.Delete(credPath, true);
             }
 
-            using (var stream = new FileStream(@"C:\Users\valto\source\repos\LAB2\LAB2\clientjson.json", FileMode.Open, FileAccess.Read))
+            using (var stream = new FileStream("clientjson.json", FileMode.Open, FileAccess.Read))
             {
                 credential = await GoogleWebAuthorizationBroker.AuthorizeAsync(
                     GoogleClientSecrets.Load(stream).Secrets,
