@@ -126,7 +126,7 @@ namespace LAB2
                 }
                 else
                 {
-                    throw new Exception("Unkown Behavior");
+                    throw new Exception("Unknown Behavior");
                 }
 
                 _logger.Log(LogLevel.TRANSFORMATION, "Result parsed");
